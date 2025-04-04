@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+        .edit-container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0px 0px 10px 0px #888;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="edit-container">
+        <h2>Edit Question</h2>
+        <form action="QuestionServlet" method="post">
+            <input type="hidden" name="action" value="update">
+            <label for="id">Question ID:</label>
+            <input type="text" id="id" name="id" required readonly><br>
+            
+            <label for="question_text">Question:</label>
+            <input type="text" id="question_text" name="question_text" required><br>
+                       
+                                 
+            <input type="submit" value="Update">
+        </form>
+        <br>
+        <a href="QuestionServlet">Back to Question List</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <!-- Servlet Declaration -->
+    <servlet>
+        <servlet-name>IntroServlet</servlet-name>
+        <servlet-class>IntroServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>IntroServlet</servlet-name>
+        <url-pattern>/IntroS</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet Mapping for User Registration -->
+    <servlet>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <servlet-class>UserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <url-pattern>/registerUser</url-pattern>
+    </servlet-mapping>
+    
+     <!-- Servlet Mapping for User Login -->
+    <servlet>
+        <servlet-name>userLoginServlet</servlet-name>
+        <servlet-class>userLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userLoginServlet</servlet-name>
+        <url-pattern>/UserLogin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet Mapping for Feedback -->
+    <servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>FeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/submitFeedback</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet Mapping for Questions -->
+    <servlet>
+        <servlet-name>QuestionServlet</servlet-name>
+        <servlet-class>QuestionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServlet</servlet-name>
+        <url-pattern>/questions</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet Mapping for Results -->
+    <servlet>
+        <servlet-name>ResultServlet</servlet-name>
+        <servlet-class>ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/results</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+</web-app>
